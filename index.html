@@ -3,12 +3,336 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punto de Venta</title>
+    <title>Bazar El Indio</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+    <link rel="stylesheet" href="css/puntoventa.css">
 </head>
-<body>
-    <h1>Punto de Venta </h1>
-    
-
-<script src="pventa.js"></script>
+<body class="font-sans text-black bg-gray-300">
+    <!--Inicio de barra de navegacion-->
+    <nav class="navbar flex justify-between items-center py-2">
+        <a href="#" class="list-none pr-2 pl-2">
+            <h1 class="text-2xl font-bold" >Bienvenidos</h1>
+        </a>
+        <ul class="flex">
+            <li class="list-none pr-2 pl-1">
+                <a href="iniciosesion.html" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Inicio de Sesion</a>
+            </li>
+            <li class="list-none pr-2 pl-1">
+                <a href="registro.html" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Crear Cuenta</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="py-10">
+        <img src="images/banner.jpg" alt="" class="object-contain h-64 w-full">
+    </div>
+    <!--Fin de barra de navegacion-->
+    <!--Productos del Hogar-->
+    <div class="py-10">
+        <h2 class="text-center text-3xl font-semibold">Productos del Hogar</h2>
+    </div>
+    <!--Fin Productos del Hogar-->
+    <!--Comienza Cocina-->
+    <div>
+        <h3 class="text-2xl font-semibold m-4">Mundo Cocina</h3>
+    </div>
+    <div class="flex m-4 grid grid-cols-4 gap-4">
+        <div class="max-w-xs rounded overflow-hidden shadow-lg bg-white m-4">
+            <img class="object-contain h-64 w-full" src="images/multi1.jpg" alt="">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">
+                    Tramontina
+                </div>
+                <p class="text-gray-700 text-base">
+                    Batería de cocina Loreto 38 piezas
+                </p>
+                <div class="flex py-4">
+                    <span class="bg-gray-400 rounded-full px-4 py-1 text-sm font-semibold text-gray-700 mr-1">Color</span>
+                    <span class="color-multi1 rounded-full h-6 w-6 mr-1 justify-center"></span>
+                </div>
+                <div class="p-2">
+                    <p class="text-base">Contado $9.990</p>
+                </div>
+                <div>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Agregar al Carro
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-xs rounded overflow-hidden shadow-lg bg-white m-4">
+            <img class="object-contain h-64 w-full" src="images/multi2.jpg" alt="">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">
+                    Tramontina
+                </div>
+                <p class="text-gray-700 text-base">
+                    Batería de cocina Loreto 38 piezas
+                </p>
+                <div>
+                    <div class="flex py-4">
+                        <span class="bg-gray-400 rounded-full px-4 py-1 text-sm font-semibold text-gray-700 mr-1">Color</span>
+                        <span class="bg-black rounded-full h-6 w-6 mr-1 justify-center"></span>
+                    </div>
+                    <div class="p-2">
+                        <p class="text-base">Contado $9.990</p>
+                    </div>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Agregar al Carro
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-xs rounded overflow-hidden shadow-lg bg-white m-4">
+            <img class="object-contain h-64 w-full" src="images/multi3.jpg" alt="">
+            <div class="px-8 py-4">
+                <div class="font-bold text-xl mb-2">
+                    Mica
+                </div>
+                <p class="text-gray-700 text-base">
+                    Batería de cocina Ferra 11 piezas
+                </p>
+                <div>
+                    <div class="flex py-4">
+                        <span class="bg-gray-400 rounded-full px-4 py-1 text-sm font-semibold text-gray-700 mr-1">Color</span>
+                        <span class="color-multi3 rounded-full h-6 w-6 mr-1 justify-center"></span>
+                    </div>
+                    <div class="p-2">
+                        <p class="text-base">Contado $7.490</p>
+                    </div>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Agregar al Carro
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-xs rounded overflow-hidden shadow-lg bg-white m-4">
+            <img class="object-contain h-64 w-full" src="images/multi5.jpg" alt="">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">
+                    Mica
+                </div>
+                <p class="text-gray-700 text-base">
+                    Batería de cocina Bottura 7 piezas
+                </p>
+                <div>
+                    <div class="flex py-4">
+                        <span class="bg-gray-400 rounded-full px-4 py-1 text-sm font-semibold text-gray-700 mr-1">Color</span>
+                        <span class="color-multi5 rounded-full h-6 w-6 mr-1 justify-center"></span>
+                    </div>
+                    <div class="p-2">
+                        <p class="text-base">Contado $8.490</p>
+                    </div>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Agregar al Carro
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin Productos Cocina-->
+    <!--Comienza Productos Parrilla-->
+    <div>
+        <h3 class="text-2xl font-semibold m-4">Mundo Parrilla</h3>
+    </div>
+    <div class="flex m-4 grid grid-cols-4 gap-4">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white m-4">
+            <img class="object-contain h-64 w-full" src="images/parrilla3.jpg" alt="">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">
+                    Mica
+                </div>
+                <p class="text-gray-700 text-base">
+                    Set de asado a uso
+                </p>
+                <div class="flex py-4">
+                    <span class="bg-gray-400 rounded-full px-4 py-1 text-sm font-semibold text-gray-700 mr-1">Color</span>
+                    <span class="bg-gray-500 rounded-full h-6 w-6 mr-1 justify-center"></span>
+                </div>
+                <div class="p-2">
+                    <p class="text-base">Contado $999</p>
+                </div>
+                <div>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Agregar al Carro
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white m-4">
+            <img class="object-contain h-64 w-full" src="images/parrilla2.jpg" alt="">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">
+                    BBQ Grill
+                </div>
+                <p class="text-gray-700 text-base">
+                    Parrilla a carbón campo chica BC-222
+                </p>
+                <div>
+                    <div class="flex py-4">
+                        <span class="bg-gray-400 rounded-full px-4 py-1 text-sm font-semibold text-gray-700 mr-1">Color</span>
+                        <span class="bg-black rounded-full h-6 w-6 mr-1 justify-center"></span>
+                    </div>
+                    <div class="p-2">
+                        <p class="text-base">Contado $19.999</p>
+                    </div>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Agregar al Carro
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white m-4">
+            <img class="object-contain h-64 w-full" src="images/parrilla5.jpg" alt="">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">
+                    Mica
+                </div>
+                <p class="text-gray-700 text-base">
+                    Brazero con tabla Pilcomayo 33x27 cm
+                </p>
+                <div>
+                    <div class="flex py-4">
+                        <span class="bg-gray-400 rounded-full px-4 py-1 text-sm font-semibold text-gray-700 mr-1">Color</span>
+                        <span class="bg-black rounded-full h-6 w-6 mr-1 justify-center"></span>
+                    </div>
+                    <div class="p-2">
+                        <p class="text-base">Contado $2.449</p>
+                    </div>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Agregar al Carro
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white m-4">
+            <img class="object-contain h-64 w-full" src="images/parrilla6.jpg" alt="">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">
+                    Napoleon
+                </div>
+                <p class="text-gray-700 text-base">
+                    Parrilla portátil barbacoa Americana
+                </p>
+                <div>
+                    <div class="flex py-4">
+                        <span class="bg-gray-400 rounded-full px-4 py-1 text-sm font-semibold text-gray-700 mr-1">Color</span>
+                        <span class="bg-black rounded-full h-6 w-6 mr-1 justify-center"></span>
+                    </div>
+                    <div class="p-2">
+                        <p class="text-base">Contado $19.999</p>
+                    </div>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Agregar al Carro
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin mundo parrilla-->
+    <!--Inicio termos e infusiones-->
+    <div>
+        <h3 class="text-2xl font-semibold m-4">Termos e infusiones</h3>
+    </div>
+    <div class="flex m-4 grid grid-cols-4 gap-4">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white m-4">
+            <img class="object-contain h-64 w-full" src="images/termo2.jpg" alt="">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">
+                    Stanley
+                </div>
+                <p class="text-gray-700 text-base">
+                    Termo clásico 1lt
+                </p>
+                <div class="flex py-4">
+                    <span class="bg-gray-400 rounded-full px-4 py-1 text-sm font-semibold text-gray-700 mr-1">Color</span>
+                    <span class="bg-black rounded-full h-6 w-6 mr-1 justify-center"></span>
+                </div>
+                <div class="p-2">
+                    <p class="text-base">Contado $7.990</p>
+                </div>
+                <div>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Agregar al Carro
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white m-4">
+            <img class="object-contain h-64 w-full" src="images/mate2.jpg" alt="">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">
+                    Unmate
+                </div>
+                <p class="text-gray-700 text-base">
+                    Mate con bombilla
+                </p>
+                <div>
+                    <div class="flex py-4">
+                        <span class="bg-gray-400 rounded-full px-4 py-1 text-sm font-semibold text-gray-700 mr-1">Color</span>
+                        <span class="bg-white rounded-full h-6 w-6 mr-1 justify-center border-solid border-2 border-gray-600 "></span>
+                    </div>
+                    <div class="p-2">
+                        <p class="text-base">Contado $1.290</p>
+                    </div>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Agregar al Carro
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white m-4">
+            <img class="object-contain h-64 w-full" src="images/matero2.jpg" alt="">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">
+                    Chilly
+                </div>
+                <p class="text-gray-700 text-base">
+                    Matera plegable Indie
+                </p>
+                <div>
+                    <div class="flex py-4">
+                        <span class="bg-gray-400 rounded-full px-4 py-1 text-sm font-semibold text-gray-700 mr-1">Color</span>
+                        <span class="bg-blue-700 rounded-full h-6 w-6 mr-1 justify-center"></span>
+                    </div>
+                    <div class="p-2">
+                        <p class="text-base">Contado $3.490</p>
+                    </div>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Agregar al Carro
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white m-4">
+            <img class="object-contain h-64 w-full" src="images/termo3.jpg" alt="">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">
+                    Thermos
+                </div>
+                <p class="text-gray-700 text-base">
+                    Thermo Everyday 1lt
+                </p>
+                <div>
+                    <div class="flex py-4">
+                        <span class="bg-gray-400 rounded-full px-4 py-1 text-sm font-semibold text-gray-700 mr-1">Color</span>
+                        <span class="bg-red-700 rounded-full h-6 w-6 mr-1 justify-center"></span>
+                    </div>
+                    <div class="p-2">
+                        <p class="text-base">Contado $3.690</p>
+                    </div>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Agregar al Carro
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin termo e infuciones-->
+    <!--Footer-->
+    <footer class="flex justify-between bg-gray-800 text-white p-2">
+        <div class="text-xs">Terminos y condiciones</div>
+        <div class="text-xs">contacto@contacto.com</div>
+    </footer>
+    <!--Fin de footer-->
 </body>
 </html>
