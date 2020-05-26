@@ -26,15 +26,49 @@ let PVenta = {
        PVenta._usuarios.map((u)=> {if (u.id == idUsuario) return usuario=u});
        return usuario;
     },
+
+    findByNameUsuario: function(nameusuario){
+        let indice = -1;
+
+        for (let i= 0; i < PVenta._usuarios.length; i++){
+            if (PVenta._usuarios[i].usuario == nameusuario){
+                indice = i;
+            }
+            if (indice >= 0){
+                return PVenta._usuarios[indice];
+            }
+            else return null;
+        }
+    },
+
     getUsuarios(){
         return PVenta._usuarios;
     },
 
     deleteUsuario(idUsuario){
+        let indice = -1;
+        for (let i=0; i<PVenta._usuarios.length; i++){
+            if (PVenta._usuarios[i].id == idUsuario){
+                indice = i;
+            }
+            if (indice >= 0){
+                PVenta._usuarios.splice(indice, 1);
+                this.saveData();
+            }
+        }
 
     },
     updateUsuario(usuario){
-
+        let indice = -1;
+        for (let i=0; i<PVenta._usuarios.length; i++){
+            if (PVenta._usuarios[i].id == usuario.id){
+                indice = i;
+            }
+            if (indice >= 0){
+                PVenta._usuarios[indice] = usuario;
+                this.saveData();
+            }
+        }
     },
 
     addUsuario(usuario){
