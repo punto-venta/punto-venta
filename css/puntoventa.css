@@ -1,0 +1,24 @@
+.navbar{
+    background-image: url("../Punto\ de\ Venta/images/navbar.jpg");
+    background-size: initial;
+}
+
+.background-page{
+    background-image: url("../Punto\ de\ Venta/images/fondo1.jpg");
+}
+
+.color-multi1{
+    background-color: #9b313b;
+}
+
+.color-multi3{
+    background-color: rgb(178, 0, 11);
+}
+
+.color-multi5{
+    background-color: rgb(255, 96, 1);
+}
+
+.color-termo3{
+    background-color:#6d0403
+}
